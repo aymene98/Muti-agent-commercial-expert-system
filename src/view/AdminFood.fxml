@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="480.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AdminFoodController">
+   <children>
+      <TextArea fx:id="currentRules" editable="false" layoutY="189.0" prefHeight="289.0" prefWidth="600.0" />
+      <Label layoutX="7.0" layoutY="18.0" text="Rule name : " />
+      <Button fx:id="deleteRule" layoutX="512.0" layoutY="13.0" mnemonicParsing="false" onAction="#deleteRuleButtonPressed" text="Delete rule" />
+      <ComboBox fx:id="rules" layoutX="133.0" layoutY="13.0" prefHeight="27.0" prefWidth="244.0" />
+      <Label layoutX="6.0" layoutY="64.0" text="Rule name : " />
+      <TextField fx:id="ruleName" layoutX="83.0" layoutY="59.0" promptText="Rule name" />
+      <CheckBox fx:id="avalability" layoutX="488.0" layoutY="62.0" mnemonicParsing="false" text="Availability rule" />
+      <Label layoutX="6.0" layoutY="96.0" text="Packaging :" />
+      <Label layoutX="255.0" layoutY="62.0" text="Meat :" />
+      <Label layoutX="255.0" layoutY="96.0" text="Drink :" />
+      <TextField fx:id="packaging" layoutX="83.0" layoutY="91.0" promptText="Packaging" />
+      <TextField fx:id="meat" layoutX="316.0" layoutY="59.0" promptText="Meat" />
+      <TextField fx:id="drink" layoutX="316.0" layoutY="91.0" promptText="Drink" />
+      <CheckBox fx:id="available" layoutX="489.0" layoutY="96.0" mnemonicParsing="false" text="Available" />
+      <Button fx:id="addRule" layoutX="498.0" layoutY="124.0" mnemonicParsing="false" onAction="#addRuleButtonClicked" prefHeight="27.0" prefWidth="87.0" text="Add rule" />
+      <Button fx:id="goBack" layoutX="498.0" layoutY="156.0" mnemonicParsing="false" onAction="#goBackButtonClicked" prefHeight="27.0" prefWidth="87.0" text="Go back" />
+      <Label layoutX="7.0" layoutY="129.0" text="Price :" />
+      <TextField fx:id="price" layoutX="83.0" layoutY="124.0" promptText="Price" />
+      <Label layoutX="8.0" layoutY="159.0" text="Rules : " />
+      <Label fx:id="outputLabel" layoutX="163.0" layoutY="159.0" text="Label" />
+      <Label layoutX="256.0" layoutY="129.0" text="Type :" />
+      <TextField fx:id="type" layoutX="315.0" layoutY="124.0" promptText="Type" />
+   </children>
+</AnchorPane>

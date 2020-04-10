@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="414.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.PhoneController">
+   <children>
+      <Label layoutX="35.0" layoutY="26.0" text="Screen size" />
+      <Label layoutX="289.0" layoutY="26.0" text="Price" />
+      <Label layoutX="166.0" layoutY="26.0" text="battery size" />
+      <RadioButton fx:id="inches5" layoutX="39.0" layoutY="50.0" mnemonicParsing="false" text="5 inches">
+         <toggleGroup>
+            <ToggleGroup fx:id="wheelsGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="inches6" layoutX="39.0" layoutY="71.0" mnemonicParsing="false" text="6 inches" toggleGroup="$wheelsGroup" />
+      <RadioButton fx:id="inches10" layoutX="39.0" layoutY="92.0" mnemonicParsing="false" text="10 inches" toggleGroup="$wheelsGroup" />
+      <RadioButton fx:id="battery4K" layoutX="166.0" layoutY="48.0" mnemonicParsing="false" text="4000 mAh">
+         <toggleGroup>
+            <ToggleGroup fx:id="sizeGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="battery10K" layoutX="166.0" layoutY="71.0" mnemonicParsing="false" text="10000 mAh" toggleGroup="$sizeGroup" />
+      <RadioButton fx:id="battery100K" layoutX="166.0" layoutY="94.0" mnemonicParsing="false" text="100000 mAh" toggleGroup="$sizeGroup" />
+      <RadioButton fx:id="price20K" layoutX="289.0" layoutY="47.0" mnemonicParsing="false" text="20000 DA">
+         <toggleGroup>
+            <ToggleGroup fx:id="priceGroup" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="price50K" layoutX="289.0" layoutY="69.0" mnemonicParsing="false" text="50000 DA" toggleGroup="$priceGroup" />
+      <RadioButton fx:id="price100K" layoutX="289.0" layoutY="92.0" mnemonicParsing="false" text="100000 DA" toggleGroup="$priceGroup" />
+      <Label layoutX="162.0" layoutY="159.0" prefHeight="23.0" prefWidth="296.0" text="We infer the disponibility of the device" AnchorPane.leftAnchor="162.0" AnchorPane.rightAnchor="161.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="215.0" text="Output of the infrence engine:" />
+      <TextArea fx:id="textArea" layoutY="238.0" prefHeight="141.0" prefWidth="619.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Button fx:id="goBackButton" layoutY="379.0" mnemonicParsing="false" onAction="#goBackButtonClicked" prefHeight="35.0" prefWidth="324.0" text="Go back" />
+      <Label fx:id="resultLabel" layoutX="276.0" layoutY="192.0" text="Label" />
+      <Button fx:id="runButton" layoutX="324.0" layoutY="379.0" mnemonicParsing="false" onAction="#runButtonClicked" prefHeight="35.0" prefWidth="296.0" text="Run" />
+      <RadioButton fx:id="forwardChain" layoutX="458.0" layoutY="62.0" mnemonicParsing="false" selected="true" text="Forward chain">
+         <toggleGroup>
+            <ToggleGroup fx:id="chainGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="backwardChain" layoutX="458.0" layoutY="101.0" mnemonicParsing="false" text="Backward chain" toggleGroup="$chainGroup" />
+      <RadioButton fx:id="inches27" layoutX="39.0" layoutY="112.0" mnemonicParsing="false" text="27 inches" toggleGroup="$wheelsGroup" />
+      <RadioButton fx:id="price150K" layoutX="289.0" layoutY="114.0" mnemonicParsing="false" text="150000 DA" toggleGroup="$priceGroup" />
+   </children>
+</AnchorPane>
